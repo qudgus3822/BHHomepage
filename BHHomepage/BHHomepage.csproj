@@ -1,7 +1,81 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="OracleWallet\cwallet.sso" />
+    <None Remove="OracleWallet\ewallet.p12" />
+    <None Remove="OracleWallet\keystore.jks" />
+    <None Remove="OracleWallet\ojdbc.properties" />
+    <None Remove="OracleWallet\README" />
+    <None Remove="OracleWallet\sqlnet.ora" />
+    <None Remove="OracleWallet\tnsnames.ora" />
+    <None Remove="OracleWallet\truststore.jks" />
+    <None Remove="OracleWallet\Wallet_BHHomepageDB\cwallet.sso" />
+    <None Remove="OracleWallet\Wallet_BHHomepageDB\ewallet.p12" />
+    <None Remove="OracleWallet\Wallet_BHHomepageDB\keystore.jks" />
+    <None Remove="OracleWallet\Wallet_BHHomepageDB\ojdbc.properties" />
+    <None Remove="OracleWallet\Wallet_BHHomepageDB\README" />
+    <None Remove="OracleWallet\Wallet_BHHomepageDB\sqlnet.ora" />
+    <None Remove="OracleWallet\Wallet_BHHomepageDB\tnsnames.ora" />
+    <None Remove="OracleWallet\Wallet_BHHomepageDB\truststore.jks" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="OracleWallet\cwallet.sso">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OracleWallet\ewallet.p12">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OracleWallet\keystore.jks">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OracleWallet\ojdbc.properties">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OracleWallet\README">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OracleWallet\sqlnet.ora">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OracleWallet\tnsnames.ora">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OracleWallet\truststore.jks">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OracleWallet\Wallet_BHHomepageDB\cwallet.sso">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OracleWallet\Wallet_BHHomepageDB\ewallet.p12">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OracleWallet\Wallet_BHHomepageDB\keystore.jks">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OracleWallet\Wallet_BHHomepageDB\ojdbc.properties">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OracleWallet\Wallet_BHHomepageDB\README">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OracleWallet\Wallet_BHHomepageDB\sqlnet.ora">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OracleWallet\Wallet_BHHomepageDB\tnsnames.ora">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OracleWallet\Wallet_BHHomepageDB\truststore.jks">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="3.21.1" />
+  </ItemGroup>
 
 </Project>
