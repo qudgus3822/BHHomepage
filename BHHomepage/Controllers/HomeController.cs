@@ -20,7 +20,6 @@ namespace BHHomepage.Controllers
 
         public IActionResult Index()
         {
-            DatabaseConnection.DatabaseConnection.DatabaseConnect();
             return View();
         }
 
